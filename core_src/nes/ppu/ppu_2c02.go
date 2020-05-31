@@ -573,7 +573,7 @@ func (self *Ppu) Clock() {
 
     // entering the vertical blank, and emit a nmi interrupt
     if self.scanline >= 241 && self.scanline < 261 {
-        if self.scanline == 241 && self.cycle == 1+8 {  // qibinyi , 1-> , nmi delay
+        if self.scanline == 241 && self.cycle == 1 {  // qibinyi ,TODO it can not pass ppu test
             // we entering the vertical blank, we set the vblank bit
             self.status_reg |= ST_PPU_VBLANK
             // if the enable non-maskable interrupt bit has been set in the
