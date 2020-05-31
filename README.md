@@ -31,6 +31,7 @@
 ## How to run 
 
 ```bash
+cd yanes_src
 go run *.go -p <path to your nes-rom>
 ```
 
