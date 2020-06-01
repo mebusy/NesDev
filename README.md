@@ -26,6 +26,11 @@
     - NES emulator
     - UI: github.com/go-gl/glfw
     - Audio: github.com/gordonklaus/portaudio 
+        - You must first install portaudio libraries
+        - Ubuntu: `apt-get install portaudio19-dev`
+        - MacOSX: `brew install portaudio`
+        - On other systems you might have to install from source
+
 
 
 ## How to run 
