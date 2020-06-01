@@ -49,8 +49,8 @@ func (self *NesView) Enter() {
 // to handle some speical event
 func (self *NesView) OnKey( key glfw.Key ) {
     switch key {
-    case glfw.KeySpace:
-        // screenshot(view.console.Buffer())
+    case glfw.KeyP:
+        simpleui.Screenshot( "./debug/" , self.screenImage  )
     case glfw.KeyR:
         self.console.Reset()
     case glfw.KeyT:

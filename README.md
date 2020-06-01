@@ -43,6 +43,11 @@ go run *.go -p <path to your nes-rom>
         scale (default 2)
 ```
 
+- Shortcut keys
+    - R : reset
+    - T : dump name tables
+    - P : screenshot
+
 ## TODO List
 
 1. audio
@@ -67,7 +72,7 @@ go run *.go -p <path to your nes-rom>
 - Destiny of an empire 2
     - ![](imgs/doae2_watersurface.gif)
     - That animation of water is just swapping two palette colors alternately
-    - a cheap solution, is something like fragment shader used in nowadays games.
+    - a cheap solution, something like fragment shader used in nowadays games.
 
 
 
