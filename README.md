@@ -1,6 +1,8 @@
 
 # Yet Another NES Emulator in Go
 
+![](imgs/nes_screenshot.jpg)
+
 ## Structure
 
 ```bash

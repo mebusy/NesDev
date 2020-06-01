@@ -11,6 +11,7 @@ import (
 	"image/draw"
 	// "image/gif"
 	"image/png"
+	"image/jpeg"
 	"io/ioutil"
 	"log"
 	"os"
@@ -141,6 +142,16 @@ func savePNG(path string, im image.Image) error {
     return png.Encode(file, im)
 }
 
+func saveJPG(path string, im image.Image) error {
+    file, err := os.Create(path)
+    if err != nil {
+        return err
+    }
+    defer file.Close()
+    return jpeg.Encode(file, im, &jpeg.Options{ Quality:100 } )
+}
+
+
 func saveGIF(path string, frames []image.Image) error {
     /*
         var palette []color.Color
@@ -170,9 +181,9 @@ func saveGIF(path string, frames []image.Image) error {
 func Screenshot(directory string, im image.Image) {
     os.MkdirAll(directory, os.ModePerm)
     for i := 0; i < 256; i++ {
-        path :=  path.Join(directory,  fmt.Sprintf("%03d.png", i))
+        path :=  path.Join(directory,  fmt.Sprintf("%03d.jpg", i))
         if _, err := os.Stat(path); os.IsNotExist(err) {
-            savePNG(path, im)
+            saveJPG(path, im)
             log.Println("save snaphost to" , path )
             return
         }
