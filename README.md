@@ -58,3 +58,17 @@ go run *.go -p <path to your nes-rom>
 
 [NES development notes](nes_notes.md)
 
+## NES programming tricks
+
+- F-1 Race
+    - ![](imgs/snapshot_f1.png)
+    - As a mapper-0 game, F-1 Race has only 8k character ROM. It actually hasn't any image for curve track.
+    - The program puts the straight track in the name table. When the PPU rendering each scanline, CPU waits PPU until it entering horizontal blank, and then change the PPU register to set corresponding offsets for next scanline so as to display various curve track.
+- Destiny of an empire 2
+    - ![](imgs/doae2_watersurface.gif)
+    - That animation of water is just swapping two palette colors alternately
+    - a cheap solution, is something like fragment shader used in nowadays games.
+
+
+
+
