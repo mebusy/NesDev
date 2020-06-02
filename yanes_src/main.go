@@ -4,7 +4,7 @@ import (
     "log"
     "os"
     "runtime/pprof"
-    "simpleui"
+    "github.com/mebusy/simpleui"
     "nes"
     "nes/cart"
     "bytes"

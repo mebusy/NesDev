@@ -5,7 +5,7 @@ import (
     "image/color"
     "nes/ppu"
     "nes"
-    "simpleui"
+    "github.com/mebusy/simpleui"
     "fmt"
     "github.com/go-gl/glfw/v3.1/glfw"
 )
