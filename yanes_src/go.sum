@@ -4,5 +4,5 @@ github.com/go-gl/glfw v0.0.0-20200420212212-258d9bec320e h1:d/6iiszw8nt7mrUmkD/z
 github.com/go-gl/glfw v0.0.0-20200420212212-258d9bec320e/go.mod h1:vR7hzQXu2zJy9AVAgeJqvqgH9Q5CA+iKCZ2gyEVpxRU=
 github.com/gordonklaus/portaudio v0.0.0-20180817120803-00e7307ccd93 h1:TSG+DyZBnazM22ZHyHLeUkzM34ClkJRjIWHTq4btvek=
 github.com/gordonklaus/portaudio v0.0.0-20180817120803-00e7307ccd93/go.mod h1:HfYnZi/ARQKG0dwH5HNDmPCHdLiFiBf+SI7DbhW7et4=
-github.com/mebusy/simpleui v0.0.0-20200602065241-4074f5bbd949 h1:4YBDwPT1yTAFfFyc3St00NLux/1CMQvpOFDJQsj8WtA=
-github.com/mebusy/simpleui v0.0.0-20200602065241-4074f5bbd949/go.mod h1:EeATxbAsqjxpj5gUtPTkNmD/Di0VmXbIaWm36eHYYes=
+github.com/mebusy/simpleui v0.0.0-20200602074042-b670c946efec h1:XdIrBOfBu9ttNo+ufIolYq22HIK+rftssZJhZWl/UUk=
+github.com/mebusy/simpleui v0.0.0-20200602074042-b670c946efec/go.mod h1:EeATxbAsqjxpj5gUtPTkNmD/Di0VmXbIaWm36eHYYes=
