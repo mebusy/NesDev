@@ -27,14 +27,12 @@ func NewNesView( w,h int) *NesView {
 func (self *NesView) Title( ) string {
     return "Yet Another NES Emulator in Go"
 }
-func (self *NesView) SetGLWindow( window *glfw.Window ) {
-    self.window = window
-}
 func (self *NesView) SetAudioDevice( audio *simpleui.Audio ) {
     self.console.SetAudioChannel(audio.GetAudioChannel())
     self.console.SetAudioSampleRate(int(audio.GetSampleRate()))
 }
 func (self *NesView) Enter() {
+    self.window = simpleui.GetWindow()
     // if err := view.console.LoadState(savePath(view.hash)); err == nil {
     //  return
     // } else {
