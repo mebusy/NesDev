@@ -11,3 +11,5 @@ github.com/mebusy/simpleui v0.0.0-20200602110522-beac4f40a0f1 h1:YchzoDBFUaYUNx+
 github.com/mebusy/simpleui v0.0.0-20200602110522-beac4f40a0f1/go.mod h1:8HbPm1TiWMLZL+WRSPHtpeGVs106cOk5d92cXbT09eY=
 github.com/mebusy/simpleui v0.0.0-20200602111217-750c6375eb79 h1:S+fgNrOePQ4RGF+dGCEqfvmeUXjaug9PQbLYJIafr1w=
 github.com/mebusy/simpleui v0.0.0-20200602111217-750c6375eb79/go.mod h1:8HbPm1TiWMLZL+WRSPHtpeGVs106cOk5d92cXbT09eY=
+github.com/mebusy/simpleui v0.0.0-20200604100003-64c4faff1bf7 h1:ieEILI/TUqixFeb1LvczU4rROeD4uwploDhbjkMwPeM=
+github.com/mebusy/simpleui v0.0.0-20200604100003-64c4faff1bf7/go.mod h1:8HbPm1TiWMLZL+WRSPHtpeGVs106cOk5d92cXbT09eY=

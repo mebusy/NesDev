@@ -6,6 +6,7 @@ import (
     "nes/ppu"
     "nes"
     "github.com/mebusy/simpleui"
+    "github.com/mebusy/simpleui/graph"
     "fmt"
     "github.com/go-gl/glfw/v3.1/glfw"
 )
@@ -27,10 +28,7 @@ func NewNesView( w,h int) *NesView {
 func (self *NesView) Title( ) string {
     return "Yet Another NES Emulator in Go"
 }
-func (self *NesView) SetAudioDevice( audio *simpleui.Audio ) {
-    self.console.SetAudioChannel(audio.GetAudioChannel())
-    self.console.SetAudioSampleRate(int(audio.GetSampleRate()))
-}
+
 func (self *NesView) Enter() {
     self.window = simpleui.GetWindow()
     // if err := view.console.LoadState(savePath(view.hash)); err == nil {
@@ -38,6 +36,8 @@ func (self *NesView) Enter() {
     // } else {
     self.console.Reset()
     // }
+    self.console.SetAudioChannel(simpleui.GetAudio().GetAudioChannel())
+    self.console.SetAudioSampleRate(int(simpleui.GetAudio().GetSampleRate()))
 
     // if load state fail , then load sram
     // load sram
@@ -134,7 +134,7 @@ func (self *NesView) TextureBuff() []uint8  {
         dst_stride := screenWidth << 2
         src_stride := spr.Width << 2
 
-        simpleui.CopyStride( self.screenImage.Pix[ y_off * dst_stride : ], dst_stride, spr.Pix , src_stride , src_stride, spr.Height )
+        graph.CopyStride( self.screenImage.Pix[ y_off * dst_stride : ], dst_stride, spr.Pix , src_stride , src_stride, spr.Height )
         //*/
 
         y_off += spr.Height+1
@@ -147,7 +147,7 @@ func (self *NesView) TextureBuff() []uint8  {
         dst_stride := screenWidth << 2
         src_stride := palSpr.Width << 2
 
-        simpleui.CopyStride( self.screenImage.Pix[ y_off * dst_stride : ], dst_stride, palSpr.Pix , src_stride , src_stride, palSpr.Height )
+        graph.CopyStride( self.screenImage.Pix[ y_off * dst_stride : ], dst_stride, palSpr.Pix , src_stride , src_stride, palSpr.Height )
 
         y_off += palSpr.Height+1
     }
