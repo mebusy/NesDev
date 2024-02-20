@@ -17,8 +17,6 @@
 │       ├── ppu
 │       ├── sprite
 │       └── tools
-├── debugger_src  (deprecated)
-├── emulator_src  (deprecated)
 ├── yanes_src
 ```
 
