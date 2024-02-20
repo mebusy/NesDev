@@ -137,7 +137,7 @@ func (self *Apu) CpuWrite(addr uint16, data uint8) {
 		self.lengthcounters[ch].counter = length_table[(data&0xF8)>>3]
 		self.envelopes[ch].start = true
 
-	// Triangle
+	// Triangle (e.g. bass)
 	case 0x4008:
 	case 0x4009:
 	case 0x400A:
@@ -194,7 +194,7 @@ func (self *Apu) CpuWrite(addr uint16, data uint8) {
 		self.envelopes[NOISE_CHANNEL].start = true
 		self.lengthcounters[NOISE_CHANNEL].counter = length_table[(data&0xF8)>>3]
 
-	// DMC
+	// DMC (playing PCM wav)
 	case 0x4010:
 	case 0x4011:
 	case 0x4012:
