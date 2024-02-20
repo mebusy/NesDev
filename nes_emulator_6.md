@@ -1,6 +1,9 @@
 
 # 6 Sound
 
+[wiki APU](https://www.nesdev.org/wiki/APU)
+
+
 We can't just issue sound samples to some audio device in game loop, because the rate at which we issue the sound samples is won't be consistent.
 
 Instead samples must be generated at the rate the audio device expects. 
@@ -34,7 +37,6 @@ We also have the ability to enable or disable the channel. These pathways per ch
 
 ![](imgs/nes_channel_sum.png)
 
-[wiki APU](http://wiki.nesdev.com/w/index.php/APU)
 
 The APU has addresses mapped into the CPU address bus. 
 
